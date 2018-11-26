@@ -1,0 +1,9 @@
+Build Tools Summarise
+
+Ant is build tool. Everything is task in ant. you write your task inside build.xml. Task is simple job ant can run. Tasks are group inside target. Target can depends each other. Ant is really old. Everything you need you have to write explicitly.
+
+Maven is build tool also and it has dependency management. It more sophisticated than ant. Everything in maven can do via plugin and life cycle. Lifecycle is a set of phase and each phase can be a plugin goal. Three different lifecyce:default, clean, site. default lifecycle is default. phases are depends each other. for example if you run maven phase package all you need will run before packaging including compile, test... etc. if you want to more specific things you have to configure plugins. we write our build script inside pom.xml. pom is extends from superpom. so you overrides superpom properties via configuring plugin. If a dependency has another dependency which is known as transitive dependency. if you are using any transitive directly in your code you have add dependency as direct dependency.
+
+gradle is copy good feature of ant which is target dependency and maven which is plugins. there is no lifecycle in gradle and everything is done by plugins.
+gradle doesnt use xml. xml is not good for writing build logic. it uses groovy language but it is totally different than groovy code which is known as DSL. You cannot repeat tasks in ant and if you need spesific build logic in maven you have write your own plugin. Everthing is possible in gradle because it uses programming language. You can write groovy code inside each task. everthing in gradle is same as maven doing via plugins and you can write you own task which is equvilant to ant target in task. you can write groovy or java code inside gradle task.
+
