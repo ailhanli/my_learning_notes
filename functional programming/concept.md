@@ -109,7 +109,9 @@ practice  3 : finding maximum numbers between 1 to 100 which divide by 10.
 practice 4: finding total salary of employee which has same age
 
 practice 5: show example of city pair used by tap project. first explain problem and then solution.
+
 practice 6: show example of campaingn management code. first explain problem and then solution.
+
 practice 7: make parallel
 
 
