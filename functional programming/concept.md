@@ -106,6 +106,7 @@ lets do more example and understand how can we program functional uses stream ap
 practice  2 : finding maximum numbers between 1 to 100 which divide by 10. 
 --first look at lazy execution
 --first do it in procedural way then functional
+
 practice 3: finding total salary of employee which has same age
 
 practice 4: show example of city pair used by tap project. first explain problem and then solution.
