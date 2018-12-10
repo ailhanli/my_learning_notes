@@ -102,14 +102,15 @@ terminator can be collect, toArray, count, reduce
 
 If chain hasnt terminator, it wont be execute. so it is lazy. lets try!
 lets do more example and understand how can we program functional uses stream api.
-example 2 : finding maximum numbers between 1 to 100 which divide by 10. 
+
+practice  2 : finding maximum numbers between 1 to 100 which divide by 10. 
 --first look at lazy execution
 --first do it in procedural way then functional
-example 3: finding total salary of employee which has same age
+practice 3: finding total salary of employee which has same age
 
-example 4: show example of city pair used by tap project. first explain problem and then solution.
-example 5: show example of campaingn management code. first explain problem and then solution.
-example 6: make parallel
+practice 4: show example of city pair used by tap project. first explain problem and then solution.
+practice 5: show example of campaingn management code. first explain problem and then solution.
+practice 6: make parallel
 
 
 
@@ -127,5 +128,5 @@ Drawbacks
 For collection related jobs, functional programming is good but performance is not better than classic looping structure
 sometimes. or other things, which are mostly has many details we cannot write functional.
 
-example: show one example..
+practice: show one example..
 
