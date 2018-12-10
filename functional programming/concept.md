@@ -1,13 +1,9 @@
-
 Hello everyone, welcome to functional programming training. 
 Before training I would like ask who has been experience functional programming before?
 Great!, before I started, I want to inform that I wont talk details in deep about functional programming. That’s because we don’t have enough time. I will try to explain concept behind the scene. Actually, you dont need to know java. Basic programming knowledge is enough.
 
 
-
-
-
-motivation
+Motivation
 ------------------------------------
 
 Assembly was first programming language. it is for writing program for microprocessor and devices. 
@@ -29,13 +25,16 @@ this new paradigm.
 
 
 
-
-
-what is function
+What is function
 --------------------------------------
 In mathematic function is fx= x+1 simply. what it means. for every x, result should be x+1. if result is different than x+1
 it is not pure function we can say function has side effect. Mathematical function is pure function. Programming function is depends.
 
+
+
+
+Side effect
+----------------------------------------
 Side effects in programming are all kind of io operations including reading from file, writing to database, calling web service etc..
 
 When you do io during the function execution, function result can be different. for instance if file is deleted or data is 
@@ -44,14 +43,14 @@ changed by third party, your program can throw an exception so we can say result
 
 
 
-definition
+What is functional programming
 --------------------------------------
 It is simple functions as a first class citizens. what it means? it means you can assign function to a variable, send to a method as a parameter or return from method. method is simply procedure in java.
 
 
 
 
-in java
+In Java
 -------------------------------------
 lambda expression is fundamental of functional of programming. Lambda is a implementation of functional interface.
 functional interface is an interface which has single method only. 
@@ -65,14 +64,14 @@ or Function interface take any type of parameter return different types.
 
 
 
-declarative versus imperative programming mode
+Declarative versus imperative programming mode
 ----------------------------------------
 In imperative programming model, we simply say what and how to do using conditional statements, looping statements.
 In declarative programming model, we only say what to do, programming language will do job for us. We will see how can we write declarative program on next topic.
 
 
 
-when we can use lambda expression in our code?
+When we can use lambda expression in our code?
 ----------------------------------------
 Lambda expression is simply an anonymous method which is a method has no names:)
 when we have different type of algorithm and we change it without changing our main method, we can use lambda.
@@ -88,7 +87,7 @@ practice 1: practice fundamental of functional programming
 
 
 
-metaphor
+Metaphor
 --------------------------------------
 Almost in our all program we use mostly collections. We iterate collection via iterator pattern and do some calculation.
 iterator pattern is a pattern which traverse to collection.
@@ -114,7 +113,7 @@ example 6: make parallel
 
 
 
-in legacy code
+In legacy code
 --------------------------------------
 For the old projects which has been developed in earlier version of java for example java 7 or before. we can't use it.
 if our project in java 8, we can write some parts especially, doing business with collection using java 8. 
@@ -123,7 +122,7 @@ it is also a first step for learning reactive which will me presented in next we
 
 
 
-drawbacks
+Drawbacks
 ------------------------------------
 For collection related jobs, functional programming is good but performance is not better than classic looping structure
 sometimes. or other things, which are mostly has many details we cannot write functional.
