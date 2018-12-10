@@ -1,3 +1,10 @@
+
+Hello everyone, welcome to functional programming training. 
+Before training I would like ask who has been experience functional programming before?
+Great!, before I started, I want to inform that I wont talk details in deep about functional programming. That’s because we don’t have enough time. I will try to explain concept behind the scene. Actually, you dont need to know java. Basic programming knowledge is enough.
+
+
+
 functional programming - motivation
 ------------------------------------
 
