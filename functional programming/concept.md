@@ -9,14 +9,20 @@ Motivation
 Assembly is a programming language for writing program for microprocessor and devices. Even for simple looping you have to write lots of instructions. It is good for hardware not for business.
 
 Procedural languages are good for writing simple business software. For example PL/SQL. What we do that we develop our business inside procedures. We write lots of procedure and call them in order to do our business. Drawbacks are it is not easy to extend and do maintenance. 
+Object oriented programming is new way of modeling real world business applications in terms of objects
 
-Object oriented programming is new way of modeling real world business applications in terms of objects. 
-SOLID is important principle for writing object oriented program:
+SOLID is important principle for writing object oriented program
+
 S for Single Responsibility, class should be change for only one reason
+
 O for open for extension close for modification, check decorator and strategy pattern
+
 L is liskow principle subclass should be substitutable for base class, avoiding inheritance 
+
 I is interface segregation it is actually single responsibility in terms of interfaces, so interface should be small as small possible
+
 D is dependency inversion which means classes should talk each other in terms of abstractions
+
 If you are not using SOLID principle, you are actually writing Object Based Programming. With OOP, you can easy to maintain and extend the code. Drawback is writing multithreaded program is really hard.
 
 Functional programming is different than all others. You can write more readable, maintainable, extendable code than OOP. Concurreny is really easier than all others.
