@@ -8,14 +8,19 @@ Motivation
 ------------------------------------
 Assembly is a programming language for writing program for microprocessor and devices. Even for simple looping you have to write lots of instructions. It is good for hardware not for business.
 
-Procedural languages are good for writing simple business software. For example PL/SQL. What we do that all our business inside procedure. We write lots of procedure and call them in order to do our business. Drawbacks are it is not easy to extend and do maintenance. 
+Procedural languages are good for writing simple business software. For example PL/SQL. What we do that we develop our business inside procedures. We write lots of procedure and call them in order to do our business. Drawbacks are it is not easy to extend and do maintenance. 
 
 Object oriented programming is new way of modeling real world business applications in terms of objects. 
-SOLID is important principle for writing object oriented program. S for Single Responsibility, O for open for extension close for modification, L is liskow principle subclass should be substitutable for base class, I is interface segregation it is actually single responsibility in terms of interfaces, D is dependency inversion which means classes should talk each other in terms of abstraction.
-If you are not using SOLID principle, you are actually writing Object Based Programming. With OOP you can easy to maintain and extend the code. Drawback is writing concurrent program is really hard.
+SOLID is important principle for writing object oriented program:
+S for Single Responsibility, class should be change for only one reason
+O for open for extension close for modification, check decorator and strategy pattern
+L is liskow principle subclass should be substitutable for base class, avoiding inheritance 
+I is interface segregation it is actually single responsibility in terms of interfaces, so interface should be small as small possible
+D is dependency inversion which means classes should talk each other in terms of abstractions
+If you are not using SOLID principle, you are actually writing Object Based Programming. With OOP, you can easy to maintain and extend the code. Drawback is writing multithreaded program is really hard.
 
-Functional programming is different than all others. You can write more readable, maintainable, extendable code. Concurreny is really easier than all others.
-Functional code is smaller than procedural and uses object oriented programming principle behind the scene. Drawback is it is not easy to undestand and i will explain sharp corner of this new paradigm.
+Functional programming is different than all others. You can write more readable, maintainable, extendable code than OOP. Concurreny is really easier than all others.
+Functional code is smaller than procedural and uses object oriented programming principle behind the scene. Drawback is it is diffucult concept to understand and i will explain sharp corner of this new paradigm.
 
 
 
@@ -23,15 +28,15 @@ What is function
 --------------------------------------
 F(x) = x+1
 
-In mathematic function can defined fx= x+1 simply. What it means that for every x, result should be x+1. If result is different than x+1 it is not pure function we can say function has side effect. Mathematical functions are pure functions. Programming function depends.
+In mathematic; function can defined fx= x+1 simply. What it means that for every x, result should be x+1. If result is different than x+1 it is not pure function we can say function has side effect. Mathematical functions are pure functions. Programming function depends.
 
 
 
 Side effect
 ----------------------------------------
-Side effects in programming are all kind of IO operations including reading/writing from/to file, reading/writing from/to database, calling web service etc..
+Side effects can be happen during the all kind of IO operations including reading/writing from/to file, reading/writing from/to database, calling web service etc..
 
-When you do IO during the function execution, function result can be different. For instance if file is deleted or data is changed by third party, your program can throw an exception so we can say result is not x+1.
+For instance if file is deleted your program can throw an exception or if database is changed by third party, result will can be invalid so we can say result is not x+1.
 
 
 
