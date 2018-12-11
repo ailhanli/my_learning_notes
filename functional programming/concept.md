@@ -8,9 +8,9 @@ Motivation
 ------------------------------------
 <b>Assembly</b> is a programming language for writing program for microprocessor and devices. Even for simple looping you have to write lots of instructions. It is good for hardware not for business.
 
-Procedural languages are good for writing simple business software. For example PL/SQL. What we do that we develop our business inside procedures. We write lots of procedure and call them in order to do our business. Drawbacks are it is not easy to extend and do maintenance. 
+<b>Procedural languages</b> are good for writing simple business software. For example PL/SQL. What we do that we develop our business inside procedures. We write lots of procedure and call them in order to do our business. Drawbacks are it is not easy to extend and do maintenance. 
 
-Object oriented programming is new way of modeling real world business applications in terms of objects
+<b>Object oriented programming</b> is new way of modeling real world business applications in terms of objects
 
 SOLID is important principle for writing object oriented program
 
@@ -26,14 +26,14 @@ D is dependency inversion which means classes should talk each other in terms of
 
 If you are not using SOLID principle, you are actually writing Object Based Programming. With OOP, you can easy to maintain and extend the code. Drawback is writing multithreaded program is really hard.
 
-Functional programming is different than all others. You can write more readable, maintainable, extendable code than OOP. Concurreny is really easier than all others.
+<b>Functional programming</b> is different than all others. You can write more readable, maintainable, extendable code than OOP. Concurreny is really easier than all others.
 Functional code is smaller than procedural and uses object oriented programming principle behind the scene. Drawback is it is diffucult concept to understand and i will explain sharp corner of this new paradigm.
 
 
 
 What is function
 --------------------------------------
-F(x) = x+1
+<b> F(x) = x+1 </b>
 
 In mathematic; function can defined fx= x+1 simply. What it means that for every x, result should be x+1. If result is different than x+1 it is not pure function we can say function has side effect. Mathematical functions are pure functions. Programming function depends.
 
