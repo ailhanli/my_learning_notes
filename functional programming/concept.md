@@ -41,6 +41,9 @@ In mathematic; function can defined fx= x+1 simply. What it means that for every
 
 Side effect
 ----------------------------------------
+
+
+
 Side effects can be happen during the all kind of IO operations including reading/writing from/to file, reading/writing from/to database, calling web service etc..
 
 For instance if file is deleted your program can throw an exception or if database is changed by third party, result will can be invalid so we can say result is not x+1.
