@@ -74,7 +74,7 @@ In imperative programming model, we simply say what and how to do business logic
 
 
 
-When we can use lambda expression in our code?
+When can we use lambda expression in our code?
 ----------------------------------------
 Lambda expression is simply an anonymous method which is a method has no names:) when we have different type of algorithms and we want to change our algorithm without changing our main functionality, we can use lambda. This is actually strategy design pattern.
 
