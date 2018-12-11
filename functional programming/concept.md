@@ -9,6 +9,7 @@ Motivation
 Assembly is a programming language for writing program for microprocessor and devices. Even for simple looping you have to write lots of instructions. It is good for hardware not for business.
 
 Procedural languages are good for writing simple business software. For example PL/SQL. What we do that we develop our business inside procedures. We write lots of procedure and call them in order to do our business. Drawbacks are it is not easy to extend and do maintenance. 
+
 Object oriented programming is new way of modeling real world business applications in terms of objects
 
 SOLID is important principle for writing object oriented program
