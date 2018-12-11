@@ -3,17 +3,19 @@ Hello everyone, welcome to functional programming training. Before the training 
 Before I started, I want to inform that I wont talk details in deep about functional programming. That’s because we don’t have enough time. I will try to explain concept behind the scene. Actually, you dont need to know Java. Basic programming knowledge is enough.
 
 
+
 Motivation
 ------------------------------------
-Assembly was first programming language. It is for writing program for microprocessor and devices. Even for simple looping you have to write lots of instructions.
+Assembly is a programming language for writing program for microprocessor and devices. Even for simple looping you have to write lots of instructions. It is good for hardware not for business.
 
-Procedural languages are good for writing simple business software. For example pl/sql. What we do in procedural. We write lots of procedure and call them in order to do our job. Drawbacks are it is not easy to extend and do maintenance.
+Procedural languages are good for writing simple business software. For example PL/SQL. What we do that all our business inside procedure. We write lots of procedure and call them in order to do our business. Drawbacks are it is not easy to extend and do maintenance. 
 
-Object oriented programming is new way of modeling real world business applications in terms of objects. If you are not using SOLID principle, you are actually writing object oriented style procedural programming. Benefits are more maintainable and extendable code. Drawback is writing concurrent program is really hard.
+Object oriented programming is new way of modeling real world business applications in terms of objects. 
+SOLID is important principle for writing object oriented program. S for Single Responsibility, O for open for extension close for modification, L is liskow principle subclass should be substitutable for base class, I is interface segregation it is actually single responsibility in terms of interfaces, D is dependency inversion which means classes should talk each other in terms of abstraction.
+If you are not using SOLID principle, you are actually writing Object Based Programming. With OOP you can easy to maintain and extend the code. Drawback is writing concurrent program is really hard.
 
 Functional programming is different than all others. You can write more readable, maintainable, extendable code. Concurreny is really easier than all others.
-
-Functional code is smaller than procedural and uses object oriented programming principle behind the scene. Drawback is it is not easy to undestand it and i will explain sharp corner of this new paradigm.
+Functional code is smaller than procedural and uses object oriented programming principle behind the scene. Drawback is it is not easy to undestand and i will explain sharp corner of this new paradigm.
 
 
 
@@ -21,45 +23,42 @@ What is function
 --------------------------------------
 F(x) = x+1
 
-In mathematic function is fx= x+1 simply. What it means that for every x, result should be x+1. If result is different than x+1 it is not pure function we can say function has side effect. Mathematical functions are pure functions. Programming function depends.
-
+In mathematic function can defined fx= x+1 simply. What it means that for every x, result should be x+1. If result is different than x+1 it is not pure function we can say function has side effect. Mathematical functions are pure functions. Programming function depends.
 
 
 
 Side effect
 ----------------------------------------
-Side effects in programming are all kind of IO operations including reading from file, writing to database, calling web service etc..
+Side effects in programming are all kind of IO operations including reading/writing from/to file, reading/writing from/to database, calling web service etc..
 
 When you do IO during the function execution, function result can be different. For instance if file is deleted or data is changed by third party, your program can throw an exception so we can say result is not x+1.
 
 
 
-
 What is functional programming
 --------------------------------------
-It is simple functions as a first class citizens. what it means that you can assign function to a variable, send to a method as a parameter or return from method. method is simply procedure in Java.
+Simply functions as a first class citizens. what it means that you can assign function to a variable, send to a method as a parameter or return from method. method is simply procedure in Java.
 
 
 
 
 In Java
 -------------------------------------
-Lambda expression is fundamental of functional of programming. The term comes from Lambda calculus. Lambda is a implementation of functional interface in Java. Functional interface is an interface which has single method only.
+Lambda expression is fundamental of functional programming. The term comes from Lambda calculus. Lambda is a implementation of functional interface in Java. Functional interface is an interface which has single method only.
 
 What is an interface? Interface is simply a contract between caller and callee.
 
-Java has several built-in functional interfaces. The main concern should be when reading an interface that What this interface takes and returns. 
+Java has several built-in functional interfaces. 
+How can we read interfaces? We have to focus on What this interface takes and returns. 
 
-For example Consumer interface take any type of parameter and return nothing so it consumes or Function interface take any type of parameter return different types.
-
-
-
+For example Consumer interface take any type of parameter and return nothing so it consumes 
+or Function interface take any type of parameter return different types.
 
 
 
 Declarative versus imperative programming mode
 ----------------------------------------
-In imperative programming model, we simply say what and how to do using conditional statements, looping statements..etc. In declarative programming model, we only say what to do! Programming language will do job for us. We will see how can we write declarative program on next topic.
+In imperative programming model, we simply say what and how to do business logic. In declarative programming model, we only say what to do! Programming language will do job for us. We will see how can we write declarative program on next topic.
 
 
 
@@ -67,7 +66,7 @@ When we can use lambda expression in our code?
 ----------------------------------------
 Lambda expression is simply an anonymous method which is a method has no names:) when we have different type of algorithms and we want to change our algorithm without changing our main functionality, we can use lambda. This is actually strategy design pattern.
 
-Because lambda is strategy pattern we can change it at runtime. Lambda is simply functional interface. So it is lazy. When interface method is called lambda will execute.
+Because lambda is strategy pattern we can change it at runtime. Lambda is implementation of functional interface. So it is lazy. When interface method is called lambda will execute.
 
 Lets try 
 practice 1: practice fundamental of functional programming 
@@ -81,11 +80,10 @@ Almost in all programs we use mostly collections. We iterate collection via iter
 
 Java has Stream API which an API uses iterator and recursion. with stream API, we write our program uses sql like operators. All operators take lambda expression as a parameter.
 
-It has three components: source, intermediate operators and terminal operators. 
-
-Source can be collection, array or file 
-intermediate operator can be filter, map, sort, distinct 
-terminal operators can be collect, toArray, count, reduce
+It has three types of component: source, intermediate and terminal. 
+- Source can be collections, array, file..etc
+- intermediate operator can be filter, map, sort, distinct 
+- terminal operators can be collect, toArray, count, reduce
 If chain hasnt terminator, it wont be execute. So it is lazy. lets try! lets do more example and understand how can we program functional uses stream api.
 
 practice 3 : finding maximum numbers between 1 to 100 which divide by 10. --first look at lazy execution --first do it in procedural way then functional
