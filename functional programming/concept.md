@@ -10,7 +10,7 @@ Motivation
 
 <b>Procedural languages</b> are good for writing simple business software. For example PL/SQL. What we do that we develop our business inside procedures. We write lots of procedure and call them in order to do our business. Drawbacks are it is not easy to extend and do maintenance. 
 
-<b>Object oriented programming</b> is new way of modeling real world business applications in terms of objects
+<b>Object oriented programming</b> is new way of modeling real world business applications in terms of objects. With OOP, you can easy to maintain and extend the code. Drawback is writing multithreaded program is really hard.
 
 SOLID is important principle for writing object oriented program
 
@@ -24,7 +24,7 @@ I is interface segregation it is actually single responsibility in terms of inte
 
 D is dependency inversion which means classes should talk each other in terms of abstractions
 
-If you are not using SOLID principle, you are actually writing Object Based Programming. With OOP, you can easy to maintain and extend the code. Drawback is writing multithreaded program is really hard.
+If you are not using SOLID principle, you are actually writing Object Based Programming. 
 
 <b>Functional programming</b> is different than all others. You can write more readable, maintainable, extendable code than OOP. Concurreny is really easier than all others.
 Functional code is smaller than procedural and uses object oriented programming principle behind the scene. Drawback is it is diffucult concept to understand and i will explain sharp corner of this new paradigm.
