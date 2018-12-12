@@ -123,7 +123,5 @@ Drawbacks
 ------------------------------------
 For collection related jobs, functional programming is good but performance is not better than classic looping structure sometimes. or other things, which are mostly has many details we cannot write functional.
 
-Practice 8: show one example..Hello everyone, welcome to functional programming training. Before the training I would like ask who has been experience functional programming before? Great!, 
-
-Before I started, I want to inform that I wont talk details in deep about functional programming. That’s because we don’t have enough time. I will try to explain concept behind the scene. Actually, you dont need to know Java. Basic programming knowledge is enough.
+Practice 8: show one example..
 
